@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="stepbuilder">
+  <name>stepbuilder</name>
+  <uuid>985406af-9111-4133-8690-bd9e16a71455</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#76233d49-814f-49bb-9f85-8b1f945ffce6"/>
+  <targetRuleProject href="../../stepbuilder#b2d17f1e-998d-40b2-8245-a3f8cbac7141"/>
+  <tags key="operationDescription">
+    <value><![CDATA["sends layout details"]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["stepbuilder"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>getstepelements</name>
+  <uuid>e0cb7cc5-ff8e-42bf-936e-582f97152014</uuid>
+  <locale>en_US</locale>
+  <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+    <Body>
+        <Properties>
+            <Property Name="UI.MediaType"><![CDATA[Web]]></Property>
+            <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
+        </Properties>
+        <Structure>
+            <ConditionDefinitions>
+                <ConditionDefinition Id="C0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[step is <a string>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+            </ConditionDefinitions>
+            <ActionDefinitions>
+                <ActionDefinition Id="A0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[set decision to a new stepdef where
+	the hasquestions is <hasquestions>, 
+	the headertext is <headertext>, 
+	the instructions is <instructions>, 
+	the steptype is <steptype>, 
+	the nextbutton is <nextbutton>, 
+	the prevbutton is <prevbutton>, 
+	the stepkey is <stepkey>]]></Text>
+                    </ExpressionDefinition>
+                </ActionDefinition>
+            </ActionDefinitions>
+        </Structure>
+        <Contents>
+            <Partition DefId="C0">
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["start"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["false"]]></Param>
+                                <Param><![CDATA["Begin Your Enrollment"]]></Param>
+                                <Param><![CDATA["Welcome to Canada Life Enrollment! We will guide you through the application process. This will take only a few minutes of your time. "]]></Param>
+                                <Param><![CDATA["display"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["false"]]></Param>
+                                <Param><![CDATA["start"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["memberinfo"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["Basic Member Information"]]></Param>
+                                <Param><![CDATA["We just need a few details about you."]]></Param>
+                                <Param><![CDATA["input"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["false"]]></Param>
+                                <Param><![CDATA["memberinfo"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["ramq"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["Residents Of Quebec"]]></Param>
+                                <Param><![CDATA["As you are a resident of Quebec, we need to know if you are enrolled in RAMQ"]]></Param>
+                                <Param><![CDATA["input"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["ramq"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["applyingfor"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["Who Is Being Covered"]]></Param>
+                                <Param><![CDATA["Are you applying for just yourself or will your spouse be covered?"]]></Param>
+                                <Param><![CDATA["input"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["applyingfor"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["spouseinfo"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["Spouse Information"]]></Param>
+                                <Param><![CDATA["We just need a few details about your spouse."]]></Param>
+                                <Param><![CDATA["input"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["spouseinfo"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["spouseplan"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["Spouse Plan Details"]]></Param>
+                                <Param><![CDATA["Since your spouse is covered under another plan, we need a few details about their plan."]]></Param>
+                                <Param><![CDATA["input"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["spouseplan"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["summary"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["Enrollment Application Detail Summary"]]></Param>
+                                <Param><![CDATA["Below is a summary of the information you have entered. Click Next to complete the application or Back to update the information. "]]></Param>
+                                <Param><![CDATA["display"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["true"]]></Param>
+                                <Param><![CDATA["summary"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["completed"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA["false"]]></Param>
+                                <Param><![CDATA["Enrollment Application Completed"]]></Param>
+                                <Param><![CDATA["Thank you! Your information has been submitted and your application is underway. We will contact you if we need additional information."]]></Param>
+                                <Param><![CDATA["display"]]></Param>
+                                <Param><![CDATA["false"]]></Param>
+                                <Param><![CDATA["false"]]></Param>
+                                <Param><![CDATA["completed"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet/>
+                </Condition>
+            </Partition>
+        </Contents>
+    </Body>
+    <Resources DefaultLocale="en_US">
+        <ResourceSet Locale="en_US">
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[step]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[846]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[stepelements]]></Data>
+        </ResourceSet>
+    </Resources>
+</DT></definition>
+</ilog.rules.studio.model.dt:DecisionTable>

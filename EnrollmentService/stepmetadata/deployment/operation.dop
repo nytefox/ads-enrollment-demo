@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="stepmetadata">
+  <name>stepmetadata</name>
+  <uuid>e4891219-e9c9-446d-bfa5-d55922efd056</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#9bdbe828-d988-4dde-a486-508621716075"/>
+  <targetRuleProject href="../../stepmetadata#2dd9e6c9-bdd6-4db2-b00a-81ef54ed1062"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

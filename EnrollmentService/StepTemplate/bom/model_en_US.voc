@@ -1,0 +1,45 @@
+
+# Fielddef
+Fielddef#concept.documentation = fielddef
+Fielddef#concept.label = fielddef
+Fielddef.Fielddef(java.lang.String,java.lang.String,java.lang.String,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.String,java.lang.String)#phrase.navigation = a new {fielddef} where {0, key} {1, label} {2, list} {3, max} {4, min} {5, order} {6, placeholder} {7, type}
+Fielddef.key#phrase.action = set the key of {this} to {key}
+Fielddef.key#phrase.navigation = {key} of {this}
+Fielddef.label#phrase.action = set the label of {this} to {label}
+Fielddef.label#phrase.navigation = {label} of {this}
+Fielddef.list#phrase.action = set the list of {this} to {list}
+Fielddef.list#phrase.navigation = {list} of {this}
+Fielddef.max#phrase.action = set the max of {this} to {max}
+Fielddef.max#phrase.addition_setter = add {max} to the max of {this}
+Fielddef.max#phrase.navigation = {max} of {this}
+Fielddef.max#phrase.subtraction_setter = subtract {max} from the max of {this}
+Fielddef.min#phrase.action = set the min of {this} to {min}
+Fielddef.min#phrase.addition_setter = add {min} to the min of {this}
+Fielddef.min#phrase.navigation = {min} of {this}
+Fielddef.min#phrase.subtraction_setter = subtract {min} from the min of {this}
+Fielddef.order#phrase.action = set the order of {this} to {order}
+Fielddef.order#phrase.addition_setter = add {order} to the order of {this}
+Fielddef.order#phrase.navigation = {order} of {this}
+Fielddef.order#phrase.subtraction_setter = subtract {order} from the order of {this}
+Fielddef.placeholder#phrase.action = set the placeholder of {this} to {placeholder}
+Fielddef.placeholder#phrase.navigation = {placeholder} of {this}
+Fielddef.type#phrase.action = set the type of {this} to {type}
+Fielddef.type#phrase.navigation = {type} of {this}
+
+# Stepdef
+Stepdef#concept.label = stepdef
+Stepdef.Stepdef(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {stepdef} where {0, hasquestions} {1, headertext} {2, instructions} {3, steptype} {4, nextbutton} {5, prevbutton} {6, stepkey}
+Stepdef.hasquestions#phrase.action = set the hasquestions of {this} to {hasquestions}
+Stepdef.hasquestions#phrase.navigation = {hasquestions} of {this}
+Stepdef.headertext#phrase.action = set the headertext of {this} to {headertext}
+Stepdef.headertext#phrase.navigation = {headertext} of {this}
+Stepdef.instructions#phrase.action = set the instructions of {this} to {instructions}
+Stepdef.instructions#phrase.navigation = {instructions} of {this}
+Stepdef.nextbutton#phrase.action = set the nextbutton of {this} to {nextbutton}
+Stepdef.nextbutton#phrase.navigation = {nextbutton} of {this}
+Stepdef.prevbutton#phrase.action = set the prevbutton of {this} to {prevbutton}
+Stepdef.prevbutton#phrase.navigation = {prevbutton} of {this}
+Stepdef.stepkey#phrase.action = set the stepkey of {this} to {stepkey}
+Stepdef.stepkey#phrase.navigation = {stepkey} of {this}
+Stepdef.steptype#phrase.action = set the steptype of {this} to {steptype}
+Stepdef.steptype#phrase.navigation = {steptype} of {this}

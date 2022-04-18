@@ -1,0 +1,90 @@
+
+
+public class Fielddef
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "fielddef"
+        property "de.generated" "true"
+{
+    public string key
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "key"
+                property update "true";
+    public string label
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "label"
+                property update "true";
+    public string list
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "list"
+                property update "true";
+    public java.lang.Long max
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "max"
+                property update "true";
+    public java.lang.Long min
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "min"
+                property update "true";
+    public java.lang.Long order
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "order"
+                property update "true";
+    public string placeholder
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "placeholder"
+                property update "true";
+    public string type
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "type"
+                property update "true";
+    public Fielddef(string key, string label, string list, java.lang.Long max, java.lang.Long min, java.lang.Long order, string placeholder, string type)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Fielddef()
+                property "dataio.default" "true";
+}
+
+public class Stepdef
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "stepdef"
+        property "de.generated" "true"
+{
+    public string hasquestions
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "hasquestions"
+                property update "true";
+    public string headertext
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "headertext"
+                property update "true";
+    public string instructions
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "instructions"
+                property update "true";
+    public string nextbutton
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "nextbutton"
+                property update "true";
+    public string prevbutton
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "prevbutton"
+                property update "true";
+    public string stepkey
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "stepkey"
+                property update "true";
+    public string steptype
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "steptype"
+                property update "true";
+    public Stepdef(string hasquestions, string headertext, string instructions, string steptype, string nextbutton, string prevbutton, string stepkey)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Stepdef()
+                property "dataio.default" "true";
+}
+

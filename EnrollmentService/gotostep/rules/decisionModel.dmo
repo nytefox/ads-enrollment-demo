@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>df13b823-198b-495a-8c50-49800eebf636</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="action">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="action"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="action" typeRef="java.lang.String"/>
+    </inputData>
+    <decision id="node_1" name="step">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="action"/>
+                <input bomType="java.lang.String" collection="false" name="province"/>
+                <input bomType="java.lang.String" collection="false" name="applicants"/>
+                <input bomType="java.lang.String" collection="false" name="currentstep"/>
+                <input bomType="java.lang.String" collection="false" name="spousecovered"/>
+                <output bomType="java.lang.String" collection="false" name="step"/>
+                <rule defaultRule="false" href="node_1/stepflow.dmt" kind="DecisionTable" name="stepflow"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="step" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="province">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="province"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="province" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_3" name="applicants">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="applicants"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="applicants" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_4" name="currentstep">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="currentstep"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="currentstep" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_5" name="spousecovered">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="spousecovered"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_5_ii" name="spousecovered" typeRef="java.lang.String"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

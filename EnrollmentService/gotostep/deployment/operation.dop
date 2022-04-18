@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="gotostep">
+  <name>gotostep</name>
+  <uuid>68dbe89d-d9af-4d49-ac88-b72dc917d62e</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#df13b823-198b-495a-8c50-49800eebf636"/>
+  <targetRuleProject href="../../gotostep#8277b4f1-4cfa-461e-8e12-2c6681134aa6"/>
+  <tags key="operationDescription">
+    <value><![CDATA["Provides step navigation"]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["gotostep"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
